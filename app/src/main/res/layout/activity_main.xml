@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="391dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/katet"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/katet1"
+        android:layout_width="386dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Например:10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" >
+        <requestFocus />
+        </EditText>
+
+    <EditText
+        android:id="@+id/katet2"
+        android:layout_width="386dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Например:30"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/katet1" />
+
+    <TextView
+        android:id="@+id/gipotenusa"
+        android:layout_width="119dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/gip"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/katet2" />
+
+    <TextView
+        android:id="@+id/Perimetr"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/per"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/gipotenusa"
+        app:layout_constraintTop_toBottomOf="@+id/gipotenusa" />
+
+    <TextView
+        android:id="@+id/ploshad"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ploshad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/Perimetr"
+        app:layout_constraintTop_toBottomOf="@+id/Perimetr" />
+
+    <TextView
+        android:id="@+id/gipRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text=" 0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/gipotenusa"
+        app:layout_constraintTop_toBottomOf="@+id/katet2" />
+
+    <TextView
+        android:id="@+id/perRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=" 0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/Perimetr"
+        app:layout_constraintTop_toBottomOf="@+id/gipotenusa" />
+
+    <TextView
+        android:id="@+id/ploshadRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=" 0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/ploshad"
+        app:layout_constraintTop_toBottomOf="@+id/perRes" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="189dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ploshad"
+        android:onClick="result"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

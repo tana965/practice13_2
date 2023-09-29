@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Practice13_2</string>
+    <string name="katet">Введите катеты прямоуольного треугольника</string>
+    <string name="gip">Гипотенуза: </string>
+    <string name="per">Периметр: </string>
+    <string name="ploshad">Площадь: </string>
+    <string name="result">Вычислить</string>
+</resources>
